@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANSH SINGH - Creative Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .skill-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .skill-icon:hover {
+            transform: scale(1.1);
+            color: #667eea;
+        }
+        
+        .fade-in {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-gradient">ANSH SINGH</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 transition duration-300">Home</a>
+                    <a href="#skills" class="text-gray-700 hover:text-purple-600 transition duration-300">Skills</a>
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 transition duration-300">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-purple-600 transition duration-300">Services</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg min-h-screen flex items-center justify-center text-white">
+        <div class="text-center fade-in">
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-wide">ANSH SINGH</h1>
+            <p class="text-xl md:text-3xl font-light mb-8 opacity-90">Creative Designer & Visual Storyteller</p>
+            <p class="text-lg md:text-xl mb-12 opacity-80 max-w-2xl mx-auto">
+                Bringing ideas to life through innovative graphics, compelling videos, and eye-catching thumbnails
+            </p>
+            <div class="flex justify-center space-x-6">
+                <div class="text-center">
+                    <i class="fas fa-palette text-4xl mb-2"></i>
+                    <p class="text-sm">Graphics Design</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-video text-4xl mb-2"></i>
+                    <p class="text-sm">Video Editing</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-image text-4xl mb-2"></i>
+                    <p class="text-sm">Thumbnail Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">My Skills</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Expertise in visual design and digital content creation, delivering professional results across multiple creative disciplines
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Graphics Designer -->
+                <div class="bg-gray-50 p-8 rounded-2xl card-hover">
+                    <div class="text-center">
+                        <i class="fas fa-palette text-6xl text-purple-600 skill-icon mb-6"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Graphics Designer</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Creating stunning visual identities, logos, and brand materials that capture attention and communicate effectively. Expert in Adobe Creative Suite and modern design principles.
+                        </p>
+                        <div class="mt-6">
+                            <div class="flex flex-wrap justify-center gap-2">
+                                <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Adobe Illustrator</span>
+                                <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Photoshop</span>
+                                <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Brand Identity</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Editor -->
+                <div class="bg-gray-50 p-8 rounded-2xl card-hover">
+                    <div class="text-center">
+                        <i class="fas fa-video text-6xl text-purple-600 skill-icon mb-6"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Video Editor</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Transforming raw footage into compelling stories through professional editing, color grading, and motion graphics. Specializing in content that engages and inspires audiences.
+                        </p>
+                        <div class="mt-6">
+                            <div class="flex flex-wrap justify-center gap-2">
+                                <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Premiere Pro</span>
+                                <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">After Effects</span>
+                                <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Color Grading</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thumbnail Designer -->
+                <div class="bg-gray-50 p-8 rounded-2xl card-hover">
+                    <div class="text-center">
+                        <i class="fas fa-image text-6xl text-purple-600 skill-icon mb-6"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Thumbnail Designer</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Designing click-worthy thumbnails for YouTube and social media that maximize engagement and views. Expert in visual psychology and platform-specific optimization.
+                        </p>
+                        <div class="mt-6">
+                            <div class="flex flex-wrap justify-center gap-2">
+                                <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">YouTube</span>
+                                <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Social Media</span>
+                                <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Conversion Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-8">About Me</h2>
+                <div class="bg-white p-12 rounded-3xl shadow-lg">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        I'm Ansh Singh, a passionate creative professional with a keen eye for design and storytelling. My journey in the creative industry has been driven by an unwavering commitment to excellence and innovation in every project I undertake.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        With years of experience in graphics design, video editing, and thumbnail creation, I've had the privilege of working with diverse clients across various industries. My approach combines artistic vision with technical expertise to deliver results that not only look stunning but also achieve measurable business outcomes.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                        I believe that great design is more than just aesthetics—it's about creating meaningful connections between brands and their audiences. Every project is an opportunity to solve problems creatively and push the boundaries of what's possible in visual communication.
+                    </p>
+                    <div class="flex justify-center">
+                        <div class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-3 rounded-full font-semibold">
+                            <i class="fas fa-heart mr-2"></i>
+                            Passionate About Creative Excellence
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive creative solutions tailored to meet your specific needs and exceed your expectations
+                </p>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Graphics Design Service -->
+                <div class="bg-gradient-to-r from-purple-50 to-blue-50 p-8 rounded-3xl">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/3 text-center mb-6 md:mb-0">
+                            <i class="fas fa-palette text-6xl text-purple-600 mb-4"></i>
+                            <h3 class="text-2xl font-bold text-gray-800">Graphics Design</h3>
+                        </div>
+                        <div class="md:w-2/3 md:pl-8">
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Logo Design & Brand Identity</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Business Cards & Stationery</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Brochures & Marketing Materials</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Social Media Graphics</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Print & Digital Advertisements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Editing Service -->
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-3xl">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/3 text-center mb-6 md:mb-0">
+                            <i class="fas fa-video text-6xl text-blue-600 mb-4"></i>
+                            <h3 class="text-2xl font-bold text-gray-800">Video Editing</h3>
+                        </div>
+                        <div class="md:w-2/3 md:pl-8">
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Professional Post-Production</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Color Correction & Grading</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Motion Graphics & Animations</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Audio Synchronization & Enhancement</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>YouTube & Social Media Optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thumbnail Design Service -->
+                <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-8 rounded-3xl">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/3 text-center mb-6 md:mb-0">
+                            <i class="fas fa-image text-6xl text-indigo-600 mb-4"></i>
+                            <h3 class="text-2xl font-bold text-gray-800">Thumbnail Design</h3>
+                        </div>
+                        <div class="md:w-2/3 md:pl-8">
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>YouTube Thumbnail Optimization</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Social Media Post Graphics</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Click-Through Rate Optimization</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>A/B Testing Variants</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Platform-Specific Formatting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 gradient-bg text-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8">Let's Work Together</h2>
+                <p class="text-xl mb-12 opacity-90 max-w-2xl mx-auto">
+                    Ready to bring your creative vision to life? Get in touch and let's discuss how we can make your project extraordinary.
+                </p>
+                
+                <div class="bg-white bg-opacity-10 backdrop-blur-lg p-8 rounded-3xl mb-12">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <i class="fas fa-envelope text-3xl mb-4"></i>
+                            <h4 class="font-semibold mb-2">Email</h4>
+                            <p class="opacity-80">ansh99368@gmail.com</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-phone text-3xl mb-4"></i>
+                            <h4 class="font-semibold mb-2">Phone</h4>
+                            <p class="opacity-80">+919119612800</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-map-marker-alt text-3xl mb-4"></i>
+                            <h4 class="font-semibold mb-2">Location</h4>
+                            <p class="opacity-80">Available Worldwide</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 p-4 rounded-full transition duration-300">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 p-4 rounded-full transition duration-300">
+                        <i class="fab fa-behance text-2xl"></i>
+                    </a>
+                    <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 p-4 rounded-full transition duration-300">
+                        <i class="fab fa-dribbble text-2xl"></i>
+                    </a>
+                    <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 p-4 rounded-full transition duration-300">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white text-gray-800 px-8 py-4 rounded-full inline-block font-semibold hover:shadow-lg transition duration-300 cursor-pointer">
+                    <i class="fas fa-rocket mr-2"></i>
+                    Start Your Project Today
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-gray-400">
+                © 2025 Ansh Singh. All rights reserved. | Crafted with <i class="fas fa-heart text-red-500"></i> for creative excellence by ABHAY.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
